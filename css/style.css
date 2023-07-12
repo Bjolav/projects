@@ -1,7 +1,10 @@
 :root {
     min-height: 100vh;
     min-height: 100svh;
+    min-width: 100vw;
+    min-width: 100svw;
     --primary-color: #0d9488;
+    --secondary-color: #00C9B4;
     --light-theme: #ffffff;
     --dark-theme: #111827;
     --tw-gradient-from: #06b6d4;
@@ -14,17 +17,62 @@
     --font-light: Roboto-Light;
 }
 
-nav {
+body {
+    min-height: 100vh;
+    min-height: 100svh;
+    min-width: 100vw;
+    min-width: 100svw;
+}
+
+/* nav {
     display: flex;
     justify-content: space-between;
-    margin: 1em 1em;
+    align-items: center;
+    margin: 1em 7em;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+}
+
+.nav-projects {
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-projects > li {
+    list-style-type: none;
+}
+
+.nav-projects > li > ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 0;
+}
+
+.nav-projects > li > ol > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.theme-btn {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
 }
 
 html, body {
     margin: 0;
     font-family: var(--font-regular);
     letter-spacing: 2px;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+header {
+    height: 100vh;
 }
 
 h1 {
@@ -33,8 +81,18 @@ h1 {
     font-family: var(--font-bold);
 }
 
+nav > h2 {
+    font-size: 1.5em;
+}
+
 h2 {
     font-family: var(--font-bold);
+    font-size: 2em;
+    text-align: center;
+}
+
+h2.center-item {
+    font-size: larger;
 }
 
 p {
@@ -52,11 +110,9 @@ p {
 }
 
 .cover-photo {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* border: solid 1em; */
     border-radius: 9999px;
-    margin: 5em auto 1em;
+    margin: 3em auto 1em;
+    width: 25em;
     background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
@@ -98,11 +154,13 @@ p {
 
 .app-theme-light {
     background-color: var(--light-theme);
+    color: var(--dark-theme)
 }
 
 .app-theme-dark {
     background-color: var(--dark-theme);
-}
+    color: var(--light-theme)
+} */
 
 @font-face {
     font-family: Roboto;
@@ -122,4 +180,35 @@ p {
 @font-face {
     font-family: Roboto-Light;
     src: url(../fonts/RobotoCondensed-Light.ttf);
+}
+
+@media screen and (max-width: 426px) and (orientation: portrait) {
+    :root {
+        /* margin: 0; */
+        background-color: green;
+    }
+
+    body {
+        margin: 0 0;
+        background-color: red;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #00C9B4;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .cover-photo {
+        display: none;
+    }
+
+    .card {
+        display: none;
+    }
 }
