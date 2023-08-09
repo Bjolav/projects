@@ -203,7 +203,7 @@ card.info > p {
     }
 } */
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 426px) and (orientation: portrait) {
     :root {
         /* margin: 0; */
         /* background-color: green; */
@@ -283,19 +283,23 @@ card.info > p {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) and (orientation: portrait) {
     nav > h2 {
         font-size: 1.8rem;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (orientation: portrait) {
     nav > h2 {
         font-size: 1.5rem;
     }
 
     .cover-photo {
         width: 18em;
+    }
+
+    header {
+        min-height: 100vh;
     }
 
     h1 {
@@ -331,7 +335,7 @@ card.info > p {
     }
 }
 
-@media screen and (max-height: 426px) {
+@media screen and (max-height: 426px) and (orientation: landscape) {
     :root {
         /* margin: 0; */
         /* background-color: green; */
@@ -424,13 +428,13 @@ card.info > p {
     }
 }
 
-@media screen and (max-height: 375px) {
+@media screen and (max-height: 375px) and (orientation: landscape) {
     header {
         min-height: 120vh;
     }
 }
 
-@media screen and (max-height: 320px) {
+@media screen and (max-height: 320px) and (orientation: landscape) {
     header {
         min-height: 150vh;
     }
