@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+    <head>
+        <meta name="description" content="Kodeloftet innlevering - unit converter" charset="utf-8">
+        <meta name="keywords" content="kodeloftet, innlevering, html, css, web design, unit convert">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <script defer src="../js/unitConv.js"></script>
+        <title>Unit Converter</title>
+    </head>
+    <body class="app-theme-light">
+        <main>
+            <nav>
+                <a href="index.html">Til prosjektsiden</a>
+            </nav>
+            <section>
+                <div class="centering">
+                    
+                    <label for="pxInput">Pixels (px): </label>
+                    <input type="number" id="pxInput" onchange="convertPxToEm()">
+                
+                    <label for="emInput">Em: </label>
+                    <input type="number" id="emInput" onchange="convertEmToPx()">
+                
+                    <!-- <script>
+                        function convertPxToEm() {
+                            const pxInput = document.getElementById("pxInput").value;
+                            const emOutput = pxInput / 16; // Assuming 1em = 16px
+                            document.getElementById("emInput").value = emOutput.toFixed(2);
+                        }
+                
+                        function convertEmToPx() {
+                            const emInput = document.getElementById("emInput").value;
+                            const pxOutput = emInput * 16; // Assuming 1em = 16px
+                            document.getElementById("pxInput").value = pxOutput.toFixed(2);
+                        }
+                    </script> -->
+                    <!-- <form>
+                        <label for="input">Input value</label>
+                        <input type="number" id="input" name="input">
+                        <br>
+                        <label for="from">From:</label>
+                        <select required name="from" id="from">
+                            <option value="select" disabled selected hidden>Select unit</option>
+                            <option value="pixels">Pixels</option>
+                            <option value="em">Em</option> -->
+                            <!-- <optgroup label="Length">
+                                <optgroup label="Metric">
+                                    <option value="milimeter">Milimeters</option>
+                                    <option value="centimeters">Centimeters</option>
+                                    <option value="meters">Meters</option>
+                                    <option value="kilometers">Kilometers</option>
+                                </optgroup>
+                                <optgroup label="Imperial"></optgroup>
+                                    <option value="inches">Inches</option>
+                                    <option value="feet">Feet</option>
+                                    <option value="yard">Yards</option>
+                                    <option value="mile">Miles</option>
+                                </optgroup>
+                            </optgroup>
+                            <optgroup label="Weight">
+                                <option value="gram">Grams</option>
+                                <option value="kilogram">Kilograms</option>
+                                <option value="ounce">Ounces</option>
+                                <option value="pounds">Pounds</option>
+                                <option value="stones">Stones</option>
+                                <option value="tons">Tons</option>
+                            </optgroup>
+                            <optgroup label="Volume">
+                                <optgroup label="Metric">
+                                    <option value="mililiter">Mililiters</option>
+                                    <option value="centiliters">Centiliters</option>
+                                    <option value="deciliters">Deciliters</option>
+                                    <option value="liters">Liters</option>
+                                </optgroup>
+                                <optgroup label="English">
+                                    <option value="fluid-ounce">Fluid ounces</option>
+                                    <option value="imperial-gallon">Gallons (Imperial)</option>
+                                </optgroup>
+                                <optgroup label="US">
+                                    <option value="us-gallon">Gallons (US)</option>
+                                </optgroup>
+                            </optgroup>
+                            <optgroup label="Temperature">
+                                <option value="celsius">Grams</option>
+                                <option value="fahrenheit">Fahrenheit</option>
+                                <option value="kelvin">Kelvin</option>
+                            </optgroup>
+                            <optgroup label="Speed">
+                                <option value="kph">Km/h</option>
+                                <option value="mph">Mph</option>
+                            </optgroup> -->
+
+                        <!-- </select>
+                        <br>
+                        <label for="to">To:</label>
+                        <select required name="to" id="to">
+                            <option value="select" disabled selected hidden>Select unit</option>
+                            <option value="pixels">Pixels</option>
+                            <option value="em">Em</option> -->
+                            <!-- <option value="select" disabled selected hidden>Select unit</option>
+                            <optgroup label="Distance">
+                                <option value="centimeters">Centimeters</option>
+                                <option value="meters">Meters</option>
+                                <option value="feet">Feet</option>
+                            </optgroup> -->
+                        <!-- </select>
+                        <br>
+                        <button type="button" id="convert">Convert</button>
+                        <p id="output"></p>
+                    </form> -->
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
