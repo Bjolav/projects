@@ -5,6 +5,8 @@
     min-width: 100svw;
     --primary-color: #0d9488;
     --secondary-color: #00C9B4;
+    --dark-primary-color: #8E518D;
+    --dark-secondary-color: #C86FC9;
     --light-theme: #ffffff;
     --dark-theme: #111827;
     --tw-gradient-from: #06b6d4;
@@ -96,9 +98,10 @@ h2.center-item {
 }
 
 p {
-    2rem;
+    font-size: 2rem;
 }
-card.info > p {
+
+.card-info > p {
     font-size: 1.5rem;
 }
 
@@ -114,10 +117,21 @@ card.info > p {
 }
 
 .cover-photo {
-    border-radius: 9999px;
+    border-radius: 20px;
     margin: 3em auto 1em;
     width: 25em;
     background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.cover-photo:hover {
+    animation: photo;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes photo {
+    from {border-radius: 20px;}
+    to {border-radius: 9999px;}
 }
 
 .utvikle {
@@ -244,6 +258,10 @@ card.info > p {
         gap: 1.5rem;
     }
 
+    header {
+        height: 100vh;
+    }
+
     h1 {
         color: var(--primary-color);
         font-size: 4em;
@@ -257,15 +275,15 @@ card.info > p {
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+    }
+
+    .card-info > p {
+        font-size: 1rem;
     }
 
     .cover-photo {
-        border-radius: 9999px;
-        margin: 3em auto 1em;
         width: 20em;
-        background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-        display: flex;
     }
 
     .utvikle {
@@ -298,10 +316,6 @@ card.info > p {
         width: 18em;
     }
 
-    header {
-        min-height: 100vh;
-    }
-
     h1 {
         font-size: 3rem;
     }
@@ -331,7 +345,7 @@ card.info > p {
     }
 
     .card-info > p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 
@@ -396,12 +410,12 @@ card.info > p {
         font-size: 1.2rem;
     }
 
+    .card-info > p {
+        font-size: 1rem;
+    }
+
     .cover-photo {
-        border-radius: 9999px;
-        margin: 3em auto 1em;
         width: 10em;
-        background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-        display: flex;
     }
 
     .cover {
