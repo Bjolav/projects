@@ -117,21 +117,10 @@ p {
 }
 
 .cover-photo {
-    border-radius: 20px;
+    border-radius: 9999px;
     margin: 3em auto 1em;
     width: 25em;
     background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.cover-photo:hover {
-    animation: photo;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes photo {
-    from {border-radius: 20px;}
-    to {border-radius: 9999px;}
 }
 
 .utvikle {
@@ -216,6 +205,23 @@ p {
         min-height: 110vh;
     }
 } */
+
+@media screen and (min-width: 1000px) {
+    .cover-photo {
+        border-radius: 20px;
+    }
+
+    .cover-photo:hover {
+        animation: photo;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes photo {
+        from {border-radius: 20px;}
+        to {border-radius: 9999px;}
+    }
+}
 
 @media screen and (max-width: 426px) and (orientation: portrait) {
     :root {
